@@ -21,11 +21,11 @@ Action*
 
 # Contents 
 
-[Abstract (#abstract)](#abstract)
+[Abstract](#abstract)
 
-[1. Motivation --- Why Five Modalities? (#motivation-why-five-modalities)](#motivation-why-five-modalities)
+[1. Motivation --- Why Five Modalities?](#motivation-why-five-modalities)
 
-[1.1 The Gap in Current Multimodal Research (#the-gap-in-current-multimodal-research)](#the-gap-in-current-multimodal-research)
+[1.1 The Gap in Current Multimodal Research](#the-gap-in-current-multimodal-research)
 
 [2. The VATSA Framework (#the-vatsa-framework)](#the-vatsa-framework)
 
