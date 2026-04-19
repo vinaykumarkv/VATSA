@@ -1,4 +1,4 @@
-**VATSA**
+# **VATSA**
 
 Video · Audio · Text · Sensory · Action
 
@@ -19,67 +19,51 @@ Action*
   **Affiliation**   DBA Candidate in AI/ML --- Walsh College (2025--2028)
   ----------------- ------------------------------------------------------
 
-# Contents {#contents .TOC-Heading}
+# Contents 
 
-[Abstract [3](#abstract)](#abstract)
+[Abstract (#abstract)](#abstract)
 
-[1. Motivation --- Why Five Modalities?
-[4](#motivation-why-five-modalities)](#motivation-why-five-modalities)
+[1. Motivation --- Why Five Modalities? (#motivation-why-five-modalities)](#motivation-why-five-modalities)
 
-[1.1 The Gap in Current Multimodal Research
-[4](#the-gap-in-current-multimodal-research)](#the-gap-in-current-multimodal-research)
+[1.1 The Gap in Current Multimodal Research (#the-gap-in-current-multimodal-research)](#the-gap-in-current-multimodal-research)
 
-[2. The VATSA Framework [5](#the-vatsa-framework)](#the-vatsa-framework)
+[2. The VATSA Framework (#the-vatsa-framework)](#the-vatsa-framework)
 
-[2.1 Modality Overview [5](#modality-overview)](#modality-overview)
+[2.1 Modality Overview (#modality-overview)](#modality-overview)
 
-[2.2 Core Architectural Principles
-[5](#core-architectural-principles)](#core-architectural-principles)
+[2.2 Core Architectural Principles (#core-architectural-principles)](#core-architectural-principles)
 
-[3. Target Applications [6](#target-applications)](#target-applications)
+[3. Target Applications (#target-applications)](#target-applications)
 
-[3.1 Healthcare & Clinical Intelligence
-[6](#healthcare-clinical-intelligence)](#healthcare-clinical-intelligence)
+[3.1 Healthcare & Clinical Intelligence (#healthcare-clinical-intelligence)](#healthcare-clinical-intelligence)
 
-[3.2 Industrial & Regulated Environments
-[6](#industrial-regulated-environments)](#industrial-regulated-environments)
+[3.2 Industrial & Regulated Environments (#industrial-regulated-environments)](#industrial-regulated-environments)
 
-[3.3 Autonomous Systems & Robotics
-[6](#autonomous-systems-robotics)](#autonomous-systems-robotics)
+[3.3 Autonomous Systems & Robotics (#autonomous-systems-robotics)](#autonomous-systems-robotics)
 
-[3.4 Education & Adaptive Learning
-[6](#education-adaptive-learning)](#education-adaptive-learning)
+[3.4 Education & Adaptive Learning (#education-adaptive-learning)](#education-adaptive-learning)
 
-[4. Implementation Roadmap
-[7](#implementation-roadmap)](#implementation-roadmap)
+[4. Implementation Roadmap (#implementation-roadmap)](#implementation-roadmap)
 
-[5. Relationship to Existing Work
-[7](#relationship-to-existing-work)](#relationship-to-existing-work)
+[5. Relationship to Existing Work (#relationship-to-existing-work)](#relationship-to-existing-work)
 
-[5.1 Foundational Architectures
-[7](#foundational-architectures)](#foundational-architectures)
+[5.1 Foundational Architectures (#foundational-architectures)](#foundational-architectures)
 
-[5.2 Recent Unified Multimodal Systems (2024-2025)
-[8](#recent-unified-multimodal-systems-2024-2025)](#recent-unified-multimodal-systems-2024-2025)
+[5.2 Recent Unified Multimodal Systems (2024-2025)(#recent-unified-multimodal-systems-2024-2025)](#recent-unified-multimodal-systems-2024-2025)
 
-[5.3 Embodied AI, Action Grounding & Vision-Language-Action Models
-[8](#embodied-ai-action-grounding-vision-language-action-models)](#embodied-ai-action-grounding-vision-language-action-models)
+[5.3 Embodied AI, Action Grounding & Vision-Language-Action Models (#embodied-ai-action-grounding-vision-language-action-models)](#embodied-ai-action-grounding-vision-language-action-models)
 
-[6. Open Research Questions
-[9](#open-research-questions)](#open-research-questions)
+[6. Open Research Questions (#open-research-questions)](#open-research-questions)
 
-[7. A Note on This Document
-[10](#a-note-on-this-document)](#a-note-on-this-document)
+[7. A Note on This Document (#a-note-on-this-document)](#a-note-on-this-document)
 
-[References [10](#references)](#references)
+[References(#references)](#references)
 
-[Foundational Work [10](#foundational-work)](#foundational-work)
+[Foundational Work(#foundational-work)](#foundational-work)
 
-[Recent Unified Multimodal Architectures (2024-2025)
-[11](#recent-unified-multimodal-architectures-2024-2025)](#recent-unified-multimodal-architectures-2024-2025)
+[Recent Unified Multimodal Architectures (2024-2025) (#recent-unified-multimodal-architectures-2024-2025)](#recent-unified-multimodal-architectures-2024-2025)
 
-[Embodied AI, Action Grounding & VLA Models (2024-2025)
-[11](#embodied-ai-action-grounding-vla-models-2024-2025)](#embodied-ai-action-grounding-vla-models-2024-2025)
+[Embodied AI, Action Grounding & VLA Models (2024-2025) (#embodied-ai-action-grounding-vla-models-2024-2025)](#embodied-ai-action-grounding-vla-models-2024-2025)
 
 # Abstract
 
