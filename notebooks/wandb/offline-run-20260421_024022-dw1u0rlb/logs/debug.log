@@ -1,0 +1,18 @@
+2026-04-21 02:40:22,595 INFO    MainThread:42016 [wandb_init.py:setup_run_log_directory():721] Logging user logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260421_024022-dw1u0rlb\logs\debug.log
+2026-04-21 02:40:22,595 INFO    MainThread:42016 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260421_024022-dw1u0rlb\logs\debug-internal.log
+2026-04-21 02:40:22,596 INFO    MainThread:42016 [wandb_init.py:init():848] calling init triggers
+2026-04-21 02:40:22,596 INFO    MainThread:42016 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'batch_size': 512, 'epochs': 10, '_wandb': {}}
+2026-04-21 02:40:23,888 INFO    MainThread:42016 [wandb_init.py:init():896] starting backend
+2026-04-21 02:40:23,888 INFO    MainThread:42016 [wandb_init.py:init():911] sending inform_init request
+2026-04-21 02:40:23,891 INFO    MainThread:42016 [wandb_init.py:init():919] backend started and connected
+2026-04-21 02:40:23,896 INFO    MainThread:42016 [wandb_run.py:_label_probe_notebook():1333] probe notebook
+2026-04-21 02:40:23,897 INFO    MainThread:42016 [wandb_run.py:_label_probe_notebook():1343] Unable to probe notebook: Expecting value: line 1 column 1 (char 0)
+2026-04-21 02:40:23,897 INFO    MainThread:42016 [wandb_init.py:init():989] updated telemetry
+2026-04-21 02:40:23,991 INFO    MainThread:42016 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-04-21 02:40:24,031 INFO    MainThread:42016 [wandb_init.py:init():1058] starting run threads in backend
+2026-04-21 02:40:24,168 INFO    MainThread:42016 [wandb_run.py:_console_start():2542] atexit reg
+2026-04-21 02:40:24,169 INFO    MainThread:42016 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-04-21 02:40:24,169 INFO    MainThread:42016 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-04-21 02:40:24,169 INFO    MainThread:42016 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-04-21 02:40:24,169 INFO    MainThread:42016 [wandb_init.py:init():1098] run started, returning control to user process
