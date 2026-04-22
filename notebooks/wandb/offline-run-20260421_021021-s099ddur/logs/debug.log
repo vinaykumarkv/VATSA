@@ -1,0 +1,32 @@
+2026-04-21 02:10:21,541 INFO    MainThread:42432 [wandb_setup.py:_flush():81] Current SDK version is 0.26.0
+2026-04-21 02:10:21,541 INFO    MainThread:42432 [wandb_setup.py:_flush():81] Configure stats pid to 42432
+2026-04-21 02:10:21,541 INFO    MainThread:42432 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-21 02:10:21,541 INFO    MainThread:42432 [wandb_init.py:setup_run_log_directory():721] Logging user logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260421_021021-s099ddur\logs\debug.log
+2026-04-21 02:10:21,542 INFO    MainThread:42432 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260421_021021-s099ddur\logs\debug-internal.log
+2026-04-21 02:10:21,542 INFO    MainThread:42432 [wandb_init.py:monkeypatch_ipython():640] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000016D3900ABA0>
+2026-04-21 02:10:21,542 INFO    MainThread:42432 [wandb_init.py:init():848] calling init triggers
+2026-04-21 02:10:21,542 INFO    MainThread:42432 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-04-21 02:10:21,542 INFO    MainThread:42432 [wandb_init.py:init():896] starting backend
+2026-04-21 02:10:26,580 INFO    MainThread:42432 [wandb_init.py:init():911] sending inform_init request
+2026-04-21 02:10:26,633 INFO    MainThread:42432 [wandb_init.py:init():919] backend started and connected
+2026-04-21 02:10:26,782 INFO    MainThread:42432 [wandb_run.py:_label_probe_notebook():1333] probe notebook
+2026-04-21 02:10:26,783 INFO    MainThread:42432 [wandb_run.py:_label_probe_notebook():1343] Unable to probe notebook: Expecting value: line 1 column 1 (char 0)
+2026-04-21 02:10:26,783 INFO    MainThread:42432 [wandb_init.py:init():989] updated telemetry
+2026-04-21 02:10:27,577 INFO    MainThread:42432 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-04-21 02:10:27,589 INFO    MainThread:42432 [wandb_init.py:init():1058] starting run threads in backend
+2026-04-21 02:10:27,797 INFO    MainThread:42432 [wandb_run.py:_console_start():2542] atexit reg
+2026-04-21 02:10:27,797 INFO    MainThread:42432 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-04-21 02:10:27,797 INFO    MainThread:42432 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-04-21 02:10:27,798 INFO    MainThread:42432 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-04-21 02:10:27,820 INFO    MainThread:42432 [wandb_init.py:init():1098] run started, returning control to user process
+2026-04-21 02:10:27,821 INFO    MainThread:42432 [wandb_init.py:_post_run_cell_hook():610] [no run ID] resuming backend
+2026-04-21 02:10:35,431 INFO    MainThread:42432 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-04-21 02:10:35,431 INFO    MainThread:42432 [wandb_init.py:_pre_run_cell_hook():599] [no run ID] pausing backend
+2026-04-21 02:10:35,445 INFO    MainThread:42432 [wandb_run.py:_finish():2309] finishing run cifar10-local/s099ddur
+2026-04-21 02:10:37,977 INFO    MainThread:42432 [jupyter.py:save_history():435] not saving jupyter history
+2026-04-21 02:10:37,978 INFO    MainThread:42432 [jupyter.py:save_ipynb():362] not saving jupyter notebook
+2026-04-21 02:10:37,978 INFO    MainThread:42432 [wandb_init.py:_jupyter_teardown():625] cleaning up jupyter logic
+2026-04-21 02:10:37,978 INFO    MainThread:42432 [wandb_run.py:_atexit_cleanup():2508] got exitcode: 0
+2026-04-21 02:10:37,978 INFO    MainThread:42432 [wandb_run.py:_restore():2490] restore
+2026-04-21 02:10:37,978 INFO    MainThread:42432 [wandb_run.py:_restore():2496] restore done
