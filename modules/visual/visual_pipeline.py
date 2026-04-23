@@ -1,6 +1,6 @@
 import torch
-from vatsa.encoder import VATSA_VisualEncoder
-from vatsa.detector import VATSA_Detector
+from visual.encoder import VATSA_VisualEncoder
+from visual.detector import VATSA_Detector
 
 
 class VATSA_VisualPipeline:

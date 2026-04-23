@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: VATSA_preprint_v1.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: abbrvnat.bst
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+Database file #1: vatsa_references.bib
+You've used 11 entries,
+            2773 wiz_defined-function locations,
+            651 strings with 6884 characters,
+and the built_in function-call counts, 5692 in all, are:
+= -- 458
+> -- 508
+< -- 8
++ -- 173
+- -- 162
+* -- 461
+:= -- 958
+add.period$ -- 41
+call.type$ -- 11
+change.case$ -- 78
+chr.to.int$ -- 11
+cite$ -- 22
+duplicate$ -- 217
+empty$ -- 357
+format.name$ -- 179
+if$ -- 1147
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 71
+num.names$ -- 44
+pop$ -- 163
+preamble$ -- 1
+purify$ -- 67
+quote$ -- 0
+skip$ -- 195
+stack$ -- 0
+substring$ -- 22
+swap$ -- 14
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 121
+warning$ -- 0
+while$ -- 33
+width$ -- 0
+write$ -- 157
