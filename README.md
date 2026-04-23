@@ -202,5 +202,5 @@ Vaswani, A. et al. (2017). Attention Is All You Need. *arXiv:1706.03762*
 ## Preprint
 
 **VATSA: Video, Audio, Text, Sensory, Action** (v1.0, April 2026)  
-DOI: [10.5281/zenodo.19714353](https://doi.org/10.5281/zenodo.19714353)  
-Zenodo: [zenodo.org/records/19714353](https://zenodo.org/records/19714353)
+DOI: [10.5281/zenodo.19715048](https://doi.org/10.5281/zenodo.19715048)  
+Zenodo: [zenodo.org/records/19715048](https://zenodo.org/records/19715048)
