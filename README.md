@@ -168,6 +168,7 @@ This repository is a **timestamped declaration of intent** — published openly 
 The complete concept paper (with detailed architecture discussion, application analysis, and full references) is available:
 - 📄 [`CONCEPT_PAPER_v1.md`](./CONCEPT_PAPER_v1.md) — Markdown version
 - 📥 [`VATSA_Concept_Paper_v1.pdf`](./VATSA_Concept_Paper_v1.pdf) — PDF download
+- 📄 [`Publication`](https://zenodo.org/records/19715048) — Publicatioon
 
 ---
 
