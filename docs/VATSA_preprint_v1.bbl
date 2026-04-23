@@ -1,0 +1,83 @@
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alayrac et~al.(2022)Alayrac, Donahue, Luc, Miech, Barr, Hasson, Lenc,
+  Mensch, Millican, Reynolds, et~al.]{alayrac2022flamingo}
+J.-B. Alayrac, J.~Donahue, P.~Luc, A.~Miech, I.~Barr, Y.~Hasson, K.~Lenc,
+  A.~Mensch, K.~Millican, M.~Reynolds, et~al.
+\newblock Flamingo: A visual language model for few-shot learning.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35, 2022.
+\newblock URL \url{https://arxiv.org/abs/2204.14198}.
+
+\bibitem[Barrault et~al.(2023)]{barrault2023audiopalm}
+L.~Barrault et~al.
+\newblock {AudioPaLM}: A large language model that can speak and listen.
+\newblock \emph{arXiv preprint arXiv:2306.12925}, 2023.
+\newblock URL \url{https://arxiv.org/abs/2306.12925}.
+
+\bibitem[Cui et~al.(2025)]{cui2025shala}
+J.~Cui et~al.
+\newblock {ShaLa}: Multimodal shared latent space modelling.
+\newblock \emph{arXiv preprint arXiv:2508.17376}, 2025.
+
+\bibitem[Li et~al.(2024)]{li2024unimoe}
+Y.~Li et~al.
+\newblock {Uni-MoE}: Scaling unified multimodal {LLMs} with mixture of experts.
+\newblock \emph{arXiv preprint arXiv:2405.11273}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.11273}.
+
+\bibitem[Liu et~al.(2025)]{liu2025embodied}
+Y.~Liu et~al.
+\newblock Aligning cyber space with physical world: A comprehensive survey on
+  embodied {AI}.
+\newblock \emph{arXiv preprint arXiv:2407.06886}, 2025.
+\newblock URL \url{https://arxiv.org/abs/2407.06886}.
+
+\bibitem[Ma et~al.(2024)]{ma2024vla}
+Y.~Ma et~al.
+\newblock A survey on vision-language-action models for embodied {AI}.
+\newblock \emph{arXiv preprint arXiv:2405.14093}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2405.14093}.
+
+\bibitem[{OpenAI}(2024)]{openai2024gpt4o}
+{OpenAI}.
+\newblock {GPT-4o} system card.
+\newblock \url{https://openai.com/index/gpt-4o-system-card/}, 2024.
+
+\bibitem[Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, et~al.]{radford2021clip}
+A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
+  A.~Askell, P.~Mishkin, J.~Clark, et~al.
+\newblock Learning transferable visual models from natural language
+  supervision.
+\newblock In \emph{International Conference on Machine Learning}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2103.00020}.
+
+\bibitem[Reed et~al.(2022)Reed, Zolna, Parisotto, Colmenarejo, Novikov,
+  Barth-Maron, Gim{\'e}nez, Sulsky, Kay, Springenberg, et~al.]{reed2022gato}
+S.~Reed, K.~Zolna, E.~Parisotto, S.~G. Colmenarejo, A.~Novikov, G.~Barth-Maron,
+  M.~Gim{\'e}nez, Y.~Sulsky, J.~Kay, J.~T. Springenberg, et~al.
+\newblock A generalist agent.
+\newblock \emph{Transactions on Machine Learning Research}, 2022.
+\newblock URL \url{https://arxiv.org/abs/2205.06175}.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~30, 2017.
+\newblock URL \url{https://arxiv.org/abs/1706.03762}.
+
+\bibitem[Yang et~al.(2025)]{yang2025survey}
+Y.~Yang et~al.
+\newblock A survey of unified multimodal understanding and generation: Advances
+  and challenges.
+\newblock \emph{arXiv preprint}, 2025.
+
+\end{thebibliography}
