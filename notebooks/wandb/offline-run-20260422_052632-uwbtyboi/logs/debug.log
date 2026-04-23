@@ -1,0 +1,525 @@
+2026-04-22 05:26:32,634 INFO    MainThread:32044 [wandb_init.py:setup_run_log_directory():721] Logging user logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260422_052632-uwbtyboi\logs\debug.log
+2026-04-22 05:26:32,634 INFO    MainThread:32044 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260422_052632-uwbtyboi\logs\debug-internal.log
+2026-04-22 05:26:32,635 INFO    MainThread:32044 [wandb_init.py:init():848] calling init triggers
+2026-04-22 05:26:32,635 INFO    MainThread:32044 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'model': 'efficientnet_b0', 'lr': 0.001, 'batch_size': 256, 'epochs': 20, 'pretrained': True, '_wandb': {}}
+2026-04-22 05:26:37,749 INFO    MainThread:32044 [wandb_init.py:init():896] starting backend
+2026-04-22 05:26:37,749 INFO    MainThread:32044 [wandb_init.py:init():911] sending inform_init request
+2026-04-22 05:26:37,754 INFO    MainThread:32044 [wandb_init.py:init():919] backend started and connected
+2026-04-22 05:26:37,757 INFO    MainThread:32044 [wandb_run.py:_label_probe_notebook():1333] probe notebook
+2026-04-22 05:26:37,758 INFO    MainThread:32044 [wandb_init.py:init():989] updated telemetry
+2026-04-22 05:26:38,228 INFO    MainThread:32044 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-04-22 05:26:38,307 INFO    MainThread:32044 [wandb_init.py:init():1058] starting run threads in backend
+2026-04-22 05:26:38,756 INFO    MainThread:32044 [wandb_run.py:_console_start():2542] atexit reg
+2026-04-22 05:26:38,757 INFO    MainThread:32044 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-04-22 05:26:38,757 INFO    MainThread:32044 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-04-22 05:26:38,757 INFO    MainThread:32044 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-04-22 05:26:38,757 INFO    MainThread:32044 [wandb_init.py:init():1098] run started, returning control to user process
+2026-04-22 05:41:10,683 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:41:10,703 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:42:14,390 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:42:14,394 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:43:42,243 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:43:42,254 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:43:42,262 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:44:41,268 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:44:42,294 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:44:42,298 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:44:47,892 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:44:50,902 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:44:50,907 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:45:55,818 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:46:14,779 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:46:33,390 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:46:33,394 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-04-22 05:47:02,977 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:47:09,240 INFO    MainThread:32044 [wandb_run.py:_finish():2309] finishing run vat sa-v-module/uwbtyboi
+2026-04-22 05:47:09,244 ERROR   MainThread:32044 [wandb_init.py:init():1609] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 1594, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_init.py", line 869, in init
+    self._wl.finish_all_active_runs()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_setup.py", line 167, in finish_all_active_runs
+    run.finish()
+    ~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2297, in finish
+    return self._finish(exit_code)
+           ~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2310, in _finish
+    with telemetry.context(run=self) as tel:
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\telemetry.py", line 45, in __exit__
+    self._run._telemetry_callback(self._obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 751, in _telemetry_callback
+    self._telemetry_flush()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 764, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_shared.py", line 105, in _publish_telemetry
+    self._publish(rec)
+    ~~~~~~~~~~~~~^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\interface\interface_sock.py", line 46, in _publish
+    self._asyncer.run(lambda: self._client.publish(request))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 374, in drain
+    raise exc
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\.venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\vinay\AppData\Roaming\uv\python\cpython-3.13.5-windows-x86_64-none\Lib\asyncio\selector_events.py", line 1005, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

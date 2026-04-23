@@ -1,0 +1,62 @@
+{
+  "module": "VATSA V-Module",
+  "timestamp": "2026-04-23T00:37:49.048195",
+  "device": "cuda",
+  "results": {
+    "latency": {
+      "detection_ms": {
+        "mean": 18.31,
+        "std": 1.84,
+        "min": 14.9,
+        "max": 22.15,
+        "p95": 21.44
+      },
+      "embedding_ms": {
+        "mean": 0.0,
+        "std": 0.0,
+        "min": 0.0,
+        "max": 0.01,
+        "p95": 0.0
+      },
+      "total_ms": {
+        "mean": 18.31,
+        "std": 1.84,
+        "min": 14.9,
+        "max": 22.15,
+        "p95": 21.44
+      }
+    },
+    "throughput": {
+      "1": {
+        "mean_ms": 11.29,
+        "embeddings_per_sec": 88.6
+      },
+      "4": {
+        "mean_ms": 11.08,
+        "embeddings_per_sec": 361.0
+      },
+      "8": {
+        "mean_ms": 11.5,
+        "embeddings_per_sec": 695.5
+      },
+      "16": {
+        "mean_ms": 11.98,
+        "embeddings_per_sec": 1335.8
+      },
+      "32": {
+        "mean_ms": 26.75,
+        "embeddings_per_sec": 1196.2
+      }
+    },
+    "embedding_quality": {
+      "consistency": 1.0,
+      "augmentation_robustness": 0.2883,
+      "inter_image_separation": 0.381
+    },
+    "gpu_memory": {
+      "allocated_mb": 63.7,
+      "peak_mb": 73.7,
+      "reserved_mb": 826.0
+    }
+  }
+}

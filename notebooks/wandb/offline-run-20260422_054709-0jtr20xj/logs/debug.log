@@ -1,0 +1,5 @@
+2026-04-22 05:47:09,238 INFO    MainThread:32044 [wandb_init.py:setup_run_log_directory():721] Logging user logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260422_054709-0jtr20xj\logs\debug.log
+2026-04-22 05:47:09,239 INFO    MainThread:32044 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to c:\Users\vinay\OneDrive\Desktop\VATSA\VATSA\notebooks\wandb\offline-run-20260422_054709-0jtr20xj\logs\debug-internal.log
+2026-04-22 05:47:09,239 INFO    MainThread:32044 [wandb_init.py:init():848] calling init triggers
+2026-04-22 05:47:09,239 INFO    MainThread:32044 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'model': 'efficientnet_b0', 'lr': 0.001, 'batch_size': 256, 'epochs': 20, 'pretrained': True, '_wandb': {}}
