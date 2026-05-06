@@ -1,0 +1,25 @@
+# Core
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
+
+# Pretrained models
+transformers>=4.45.0
+
+# Experiment tracking
+wandb==0.26.0
+
+# Utilities
+numpy
+matplotlib
+Pillow
+
+# Visual module (existing)
+opencv-python
+ultralytics
+
+# Audio module extras (optional)
+datasets
+librosa
+soundfile
+tensorboard
