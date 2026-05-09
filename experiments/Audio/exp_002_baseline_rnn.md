@@ -1,7 +1,7 @@
 # EXP-002 — Baseline RNN Classifier (Single LSTM)
 
 **Date:** May 2026  
-**Notebook:** notebooks/audio/01_02_a_module_baseline_RNN_LSTM_classifier.ipynb  (renamed)
+**Notebook:** notebooks/01_02_a_module_baseline_RNN_LSTM_classifier.ipynb  (renamed)
 **Status:** Complete  
 
 ## Objective

@@ -1,7 +1,7 @@
 # EXP-003 — Transfer Learning with Wav2Vec2
 
 **Date:** May 2026  
-**Notebook:** notebooks/audio/03_a_module_transfer_learning.ipynb  
+**Notebook:** notebooks/03_a_module_transfer_learning.ipynb  
 **Status:** Complete  
 
 ## Objective
